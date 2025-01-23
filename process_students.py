@@ -26,7 +26,7 @@ def process_student_data(input_file, output_file):
     output_df.to_excel(output_file, index=False, engine="openpyxl")
 
 input_file = r"C:\Users\Public\Projects\input.xlsx"  # Replace with the input file path
-output_file = r"C:\Users\Public\Projects\output_{datetime.now().strftime('%Y%m%d')}.xlsx"  # Replace with the output file path
+output_file = f"C:\\Users\\Public\\Projects\\output_{datetime.now().strftime('%Y%m%d')}.xlsx"  # Replace with the output file path
 
 process_student_data(input_file, output_file)
 print(f"Processed data has been written to {output_file}")
